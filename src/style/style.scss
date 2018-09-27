@@ -1,0 +1,51 @@
+.wrap {
+    min-height: 100vh;
+    .el-header {
+      position: relative;
+      background-color: pink;
+      line-height: 60px;
+      .el-button {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-60%);
+        border: #fff;
+        background-color: #fff;
+      }
+    }
+    .body-wrap {
+      position: relative;
+      overflow: hidden;
+      .el-aside {
+        z-index: 999;
+        min-width: 200px;
+        max-width: 200px;
+        height: calc(100vh - 100px);
+        background-color: rgb(84, 92, 100);
+        color: #333;
+      }
+      .el-main {
+        z-index: 1;
+        color: #333;
+        text-align: center;
+        .main {
+          background-color: #fff;
+          padding: 10px;
+          border-radius: 10px;
+          min-height: calc(100vh - 200px)
+        }
+      }
+    }
+  }
+  // html{
+  //   height: 100%
+  // }
+  html,body{
+    background: pink;
+    height: 100%;
+    overflow:hidden;
+  }
+  .abc{
+    height: 100%;
+    background-color:rgb(151, 223, 185);
+}

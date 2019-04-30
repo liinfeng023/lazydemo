@@ -1,8 +1,5 @@
 <template >
-    <div class="abc">
-        gafasdfa
-    </div>
-   <!-- <div>
+   <div>
        <div class="login">
            <img src="../../../static/img/logo.png" alt="" style="margin-top:5%">
            <div>
@@ -11,7 +8,7 @@
            </div>
            <el-button type="primary" size="small" style="width:70%;margin-top:5%" @click="getLogin"><i class="fa fa-spinner fa-pulse" v-if="loading"></i>&nbsp;&nbsp;{{loginMsg}}</el-button>
        </div>
-   </div> -->
+   </div>
 </template>
 <script>
 export default {
@@ -29,8 +26,8 @@ export default {
             if(vm.username === '123' && vm.password === '123'){
                 vm.loading = true
                 vm.loginMsg = '登陆中'
-                vm.$router.push({path:'/Aside'})
-                console.log("登陆成功，即将跳转！")
+                sessionStorage.setItem('token','linfeng')
+                vm.$router.push({path:'/Home'})
             }
         },
     }
@@ -39,4 +36,3 @@ export default {
 <style lang="scss" scoped>
     @import '../../style/loginStyle.scss';
 </style>
-

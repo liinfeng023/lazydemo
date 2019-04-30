@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0
+}
 .wrap {
     min-height: 100vh;
     .el-header {
@@ -27,7 +31,6 @@
       .el-main {
         z-index: 1;
         color: #333;
-        text-align: center;
         .main {
           background-color: #fff;
           padding: 10px;
@@ -37,15 +40,3 @@
       }
     }
   }
-  // html{
-  //   height: 100%
-  // }
-  html,body{
-    background: pink;
-    height: 100%;
-    overflow:hidden;
-  }
-  .abc{
-    height: 100%;
-    background-color:rgb(151, 223, 185);
-}

@@ -1,8 +1,15 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+
+//整体 
 import Full from '@/container/Full'
-import HelloWorld from '@/components/HelloWorld'
-import Aside from '@/components/Aside'
+
+// 首页
+import Home from '@/components/home'
+
+// main
+import Dialog from '@/views/main/others/dialog'
+import DialogForm from '@/views/main/others/dialog-form'
 
 // 登陆
 import login from '@/views/login/login'
@@ -17,13 +24,23 @@ var router = new Router({
       children: [
         {
           path: '/',
-          component: HelloWorld
+          component: Home
         },
         {
-          path:'/Aside',
-          name:'Aside',
-          component:Aside
-        }
+          path:'/Home',
+          name:'Home',
+          component:Home
+        },
+        {
+          path:'/Dialog',
+          name:'Dialog',
+          component:Dialog
+        },
+        {
+          path:'/DialogForm',
+          name:'DialogForm',
+          component:DialogForm
+        },
       ]
     },
     { 

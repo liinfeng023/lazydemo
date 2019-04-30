@@ -14,12 +14,10 @@
     </el-container>
 </template>
 <script>
-import HelloWorld from '../components/HelloWorld'
 import ElMenuAside from '../components/Aside'
 export default {
     name:'full',
     components:{
-        HelloWorld,
         ElMenuAside
     }
 }
@@ -28,10 +26,8 @@ export default {
   .el-main {
     background-color: rgba(134, 134, 150, 0.411);
     color: #333;
-    text-align: center;
-    line-height: 160px;
   }
   .el-aside{
-      background: rgb(84, 92, 100);
+    background: rgb(84, 92, 100);
   }
 </style>
